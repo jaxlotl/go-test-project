@@ -1,10 +1,13 @@
 package main
 
 import (
-	"github.com/jaxlotl/go-libdogecoin-sandbox"
+	"fmt"
+
+	lbd "github.com/jaxlotl/go-libdogecoin"
 )
 
 func main() {
-	libdogecoin.W_context_start()
-	libdogecoin.W_context_stop()
+	lbd.W_context_start()
+	fmt.Println("Hello from libdogecoin!")
+	lbd.W_context_stop()
 }
